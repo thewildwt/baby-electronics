@@ -1,3 +1,3 @@
 Video of the project:
 
-[➿](https://youtu.be/srolKwcDa0k)
+[➿](https://youtu.be/EQT-8zzRo0E)
