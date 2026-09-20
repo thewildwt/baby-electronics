@@ -11,24 +11,20 @@ class DrawCircle(Node):
         self.cmd_pub = self.create_publisher(Twist, '/turtle1/cmd_vel', 10) 
 
         self.linear_speed = 0.5  #initial linear speed
-        self.linear_speed_long = 2
-        self.linear_speed_half_short = 0.5
-        
-        
         self.angular_speed = 1.0 #initial angular speed
-        
-        
-        #initialization 
-        self.switch_case = "oval" 
-        self.orientation = "half_short"
-        self.orientation_count = 0
-        
+        self.switch_case = "spiral"  #for checking what part of code to execute
+
+        # time to complete the spiral
+        self.duration_circle = 4 * (2 * math.pi) / self.angular_speed
         self.elapsed = 0.0
         self.dt = 0.1
 
-        # constants 
-        self.duration_line = 2 #determines how long the line is
-        self.duration = 1.3
+        # time to complete line 
+        self.duration_line = 2.0 #determines how long the line is
+        
+        # speed by which to increase the circle
+        self.linear_increase_constant = 0.15
+        self.linear_increase = self.linear_increase_constant/self.duration_circle
 
         self.timer = self.create_timer(self.dt, self.move)
         
@@ -37,51 +33,30 @@ class DrawCircle(Node):
         twist = Twist()
 
         match self.switch_case:
-            case "oval":         # drawing the spiral
+            case "spiral":         # drawing the spiral
                 
-                match self.orientation_count:
-                    case 1:
-                        self.orientation = "long"
-                    case 2:
-                        self.orientation = "half_short"
-                    case 3:
-                        self.orientation = "half_short"
-                    case 4:
-                        self.orientation = "long"
-                    case 5:
-                        self.orientation = "half_short"
-                    case 6:
-                        self.orientation = "stop"
-                        self.switch_case = "line"
+                if self.elapsed < self.duration_circle:
+                    twist.linear.x = self.linear_speed
+                    self.linear_speed += self.linear_increase
+                    twist.angular.z = self.angular_speed
+                    self.elapsed += self.dt
+                else:
+                    twist.linear.x = 0.0
+                    twist.angular.z = 0.0
+                    self.get_logger().info("Spiral complete!")
+                    self.switch_case = "rotation"
+                    self.elapsed = 0
+
+            case "rotation":   #rotation of turtle - no linear velocity
                 
-                match self.orientation:
-                    case "long":
-                        if self.elapsed < self.duration:
-                            twist.linear.x = self.linear_speed_long
-                            twist.angular.z = self.angular_speed
-                            self.elapsed += self.dt
-                        else:
-                            twist.linear.x = 0.0
-                            twist.angular.z = 0.0
-                            self.get_logger().info("long complete")
-                            self.orientation_count += 1
-                            self.elapsed = 0
-                    
-                    case "half_short":
-                        if self.elapsed < self.duration:
-                            twist.linear.x = self.linear_speed_half_short
-                            twist.angular.z = self.angular_speed
-                            self.elapsed += self.dt
-                        else:
-                            twist.linear.x = 0.0
-                            twist.angular.z = 0.0
-                            self.get_logger().info("half_short complete")
-                            self.orientation_count += 1
-                            self.elapsed = 0
-                    
-                    case "stop":
-                        pass
-            
+                if self.elapsed < self.duration_circle/4.0 * 3.0/4.0 : #overshoots due to program running on 0.1 secs
+                    twist.angular.z = self.angular_speed
+                    self.elapsed += self.dt
+                else:
+                    twist.angular.z = 0.0
+                    self.get_logger().info("Rotation Complete!")
+                    self.switch_case = "line"
+                    self.elapsed = 0                
             case "line":                         #drawing of line
 
                 if self.elapsed < self.duration_line: 

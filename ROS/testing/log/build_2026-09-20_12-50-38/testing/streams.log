@@ -1,0 +1,32 @@
+[3.480s] Invoking command in '/home/thewildwest/baby-electronics/ROS/testing/src/testing': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/thewildwest/baby-electronics/ROS/testing/build/testing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/testing build --build-base /home/thewildwest/baby-electronics/ROS/testing/build/testing/build install --record /home/thewildwest/baby-electronics/ROS/testing/build/testing/install.log --install-scripts $base/lib/testing --single-version-externally-managed install_data
+[3.772s] running egg_info
+[3.789s] writing ../../build/testing/testing.egg-info/PKG-INFO
+[3.790s] writing dependency_links to ../../build/testing/testing.egg-info/dependency_links.txt
+[3.790s] writing entry points to ../../build/testing/testing.egg-info/entry_points.txt
+[3.790s] writing requirements to ../../build/testing/testing.egg-info/requires.txt
+[3.791s] writing top-level names to ../../build/testing/testing.egg-info/top_level.txt
+[3.830s] reading manifest file '../../build/testing/testing.egg-info/SOURCES.txt'
+[3.831s] writing manifest file '../../build/testing/testing.egg-info/SOURCES.txt'
+[3.831s] running build
+[3.831s] running build_py
+[3.832s] copying testing/__init__.py -> /home/thewildwest/baby-electronics/ROS/testing/build/testing/build/lib/testing
+[3.832s] copying testing/node_2.py -> /home/thewildwest/baby-electronics/ROS/testing/build/testing/build/lib/testing
+[3.832s] copying testing/node_3.py -> /home/thewildwest/baby-electronics/ROS/testing/build/testing/build/lib/testing
+[3.832s] copying testing/node_1.py -> /home/thewildwest/baby-electronics/ROS/testing/build/testing/build/lib/testing
+[3.832s] copying testing/py.typed -> /home/thewildwest/baby-electronics/ROS/testing/build/testing/build/lib/testing
+[3.833s] running install
+[3.836s] running install_lib
+[3.854s] copying /home/thewildwest/baby-electronics/ROS/testing/build/testing/build/lib/testing/node_2.py -> /home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing
+[3.855s] byte-compiling /home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing/node_2.py to node_2.cpython-314.pyc
+[3.871s] running install_data
+[3.871s] copying resource/testing -> /home/thewildwest/baby-electronics/ROS/testing/install/testing/share/ament_index/resource_index/packages
+[3.871s] copying package.xml -> /home/thewildwest/baby-electronics/ROS/testing/install/testing/share/testing
+[3.871s] running install_egg_info
+[3.892s] removing '/home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing-0.0.0-py3.14.egg-info' (and everything under it)
+[3.892s] Copying ../../build/testing/testing.egg-info to /home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing-0.0.0-py3.14.egg-info
+[3.914s] running install_scripts
+[4.007s] Installing node_1 script to /home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/testing
+[4.007s] Installing node_2 script to /home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/testing
+[4.007s] Installing node_3 script to /home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/testing
+[4.008s] writing list of installed files to '/home/thewildwest/baby-electronics/ROS/testing/build/testing/install.log'
+[4.034s] Invoked command in '/home/thewildwest/baby-electronics/ROS/testing/src/testing' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/thewildwest/baby-electronics/ROS/testing/build/testing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/testing build --build-base /home/thewildwest/baby-electronics/ROS/testing/build/testing/build install --record /home/thewildwest/baby-electronics/ROS/testing/build/testing/install.log --install-scripts $base/lib/testing --single-version-externally-managed install_data
