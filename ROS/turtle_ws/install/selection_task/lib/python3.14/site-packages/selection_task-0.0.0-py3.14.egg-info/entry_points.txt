@@ -1,0 +1,2 @@
+[console_scripts]
+node_turtle_move = selection_task.node_turtle_move:main

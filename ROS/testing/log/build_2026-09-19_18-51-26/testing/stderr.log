@@ -1,0 +1,5 @@
+  File "/home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing/node_2.py", line 58
+    case "long:
+         ^
+SyntaxError: unterminated string literal (detected at line 58)
+

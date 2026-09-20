@@ -1,0 +1,5 @@
+  File "/home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing/node_1.py", line 46
+    twist.angular.z = 3.0*math.pi/2.o
+                                   ^
+SyntaxError: invalid decimal literal
+

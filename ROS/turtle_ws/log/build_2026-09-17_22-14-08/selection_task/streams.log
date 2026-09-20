@@ -1,0 +1,28 @@
+[0.622s] Invoking command in '/home/thewildwest/turtle_ws/src/selection_task': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/thewildwest/turtle_ws/build/selection_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thewildwest/turtle_ws/install/selection_task/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/selection_task build --build-base /home/thewildwest/turtle_ws/build/selection_task/build install --record /home/thewildwest/turtle_ws/build/selection_task/install.log --install-scripts $base/lib/selection_task --single-version-externally-managed install_data
+[0.856s] running egg_info
+[0.873s] writing ../../build/selection_task/selection_task.egg-info/PKG-INFO
+[0.873s] writing dependency_links to ../../build/selection_task/selection_task.egg-info/dependency_links.txt
+[0.874s] writing entry points to ../../build/selection_task/selection_task.egg-info/entry_points.txt
+[0.874s] writing requirements to ../../build/selection_task/selection_task.egg-info/requires.txt
+[0.874s] writing top-level names to ../../build/selection_task/selection_task.egg-info/top_level.txt
+[0.913s] reading manifest file '../../build/selection_task/selection_task.egg-info/SOURCES.txt'
+[0.914s] writing manifest file '../../build/selection_task/selection_task.egg-info/SOURCES.txt'
+[0.914s] running build
+[0.914s] running build_py
+[0.914s] copying selection_task/__init__.py -> /home/thewildwest/turtle_ws/build/selection_task/build/lib/selection_task
+[0.914s] copying selection_task/node_turtle_move.py -> /home/thewildwest/turtle_ws/build/selection_task/build/lib/selection_task
+[0.915s] copying selection_task/py.typed -> /home/thewildwest/turtle_ws/build/selection_task/build/lib/selection_task
+[0.915s] running install
+[0.921s] running install_lib
+[0.940s] copying /home/thewildwest/turtle_ws/build/selection_task/build/lib/selection_task/node_turtle_move.py -> /home/thewildwest/turtle_ws/install/selection_task/lib/python3.14/site-packages/selection_task
+[0.940s] byte-compiling /home/thewildwest/turtle_ws/install/selection_task/lib/python3.14/site-packages/selection_task/node_turtle_move.py to node_turtle_move.cpython-314.pyc
+[0.941s] running install_data
+[0.941s] copying resource/selection_task -> /home/thewildwest/turtle_ws/install/selection_task/share/ament_index/resource_index/packages
+[0.942s] copying package.xml -> /home/thewildwest/turtle_ws/install/selection_task/share/selection_task
+[0.942s] running install_egg_info
+[0.960s] removing '/home/thewildwest/turtle_ws/install/selection_task/lib/python3.14/site-packages/selection_task-0.0.0-py3.14.egg-info' (and everything under it)
+[0.961s] Copying ../../build/selection_task/selection_task.egg-info to /home/thewildwest/turtle_ws/install/selection_task/lib/python3.14/site-packages/selection_task-0.0.0-py3.14.egg-info
+[0.978s] running install_scripts
+[1.069s] Installing node_turtle_move script to /home/thewildwest/turtle_ws/install/selection_task/lib/selection_task
+[1.070s] writing list of installed files to '/home/thewildwest/turtle_ws/build/selection_task/install.log'
+[1.094s] Invoked command in '/home/thewildwest/turtle_ws/src/selection_task' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/thewildwest/turtle_ws/build/selection_task/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thewildwest/turtle_ws/install/selection_task/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/selection_task build --build-base /home/thewildwest/turtle_ws/build/selection_task/build install --record /home/thewildwest/turtle_ws/build/selection_task/install.log --install-scripts $base/lib/selection_task --single-version-externally-managed install_data

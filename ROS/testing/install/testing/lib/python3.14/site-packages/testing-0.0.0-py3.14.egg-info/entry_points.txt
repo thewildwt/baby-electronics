@@ -1,0 +1,4 @@
+[console_scripts]
+node_1 = testing.node_1:main
+node_2 = testing.node_2:main
+node_3 = testing.node_3:main

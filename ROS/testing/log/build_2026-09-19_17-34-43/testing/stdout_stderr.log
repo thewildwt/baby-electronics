@@ -1,0 +1,31 @@
+running egg_info
+writing ../../build/testing/testing.egg-info/PKG-INFO
+writing dependency_links to ../../build/testing/testing.egg-info/dependency_links.txt
+writing entry points to ../../build/testing/testing.egg-info/entry_points.txt
+writing requirements to ../../build/testing/testing.egg-info/requires.txt
+writing top-level names to ../../build/testing/testing.egg-info/top_level.txt
+reading manifest file '../../build/testing/testing.egg-info/SOURCES.txt'
+writing manifest file '../../build/testing/testing.egg-info/SOURCES.txt'
+running build
+running build_py
+copying testing/__init__.py -> /home/thewildwest/baby-electronics/ROS/testing/build/testing/build/lib/testing
+copying testing/node_1.py -> /home/thewildwest/baby-electronics/ROS/testing/build/testing/build/lib/testing
+copying testing/py.typed -> /home/thewildwest/baby-electronics/ROS/testing/build/testing/build/lib/testing
+running install
+running install_lib
+copying /home/thewildwest/baby-electronics/ROS/testing/build/testing/build/lib/testing/node_1.py -> /home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing
+byte-compiling /home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing/node_1.py to node_1.cpython-314.pyc
+running install_data
+copying resource/testing -> /home/thewildwest/baby-electronics/ROS/testing/install/testing/share/ament_index/resource_index/packages
+  File "/home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing/node_1.py", line 46
+    twist.angular.z = 3.0*math.pi/2.o
+                                   ^
+SyntaxError: invalid decimal literal
+
+copying package.xml -> /home/thewildwest/baby-electronics/ROS/testing/install/testing/share/testing
+running install_egg_info
+removing '/home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing-0.0.0-py3.14.egg-info' (and everything under it)
+Copying ../../build/testing/testing.egg-info to /home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/python3.14/site-packages/testing-0.0.0-py3.14.egg-info
+running install_scripts
+Installing node_1 script to /home/thewildwest/baby-electronics/ROS/testing/install/testing/lib/testing
+writing list of installed files to '/home/thewildwest/baby-electronics/ROS/testing/build/testing/install.log'
