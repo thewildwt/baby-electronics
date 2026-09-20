@@ -1,5 +1,0 @@
-  File "/home/thewildwest/turtle_ws/install/selection_task/lib/python3.14/site-packages/selection_task/node_turtle_move.py", line 38
-    if self.rotations >= 6  
-                            ^
-SyntaxError: expected ':'
-
