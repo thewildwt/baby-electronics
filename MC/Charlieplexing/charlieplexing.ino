@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 //constants
 #define LED_DELAY 500
 

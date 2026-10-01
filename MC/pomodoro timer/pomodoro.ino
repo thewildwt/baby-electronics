@@ -12,10 +12,9 @@ LiquidCrystal_I2C lcd(I2C_ADDR, LCD_COLUMNS, LCD_LINES);
 // for the buttons
 
 int pins[] = {2,4};
-int button_idle = LOW;
 
-int button_1 = LOW;
-int button_2 = LOW;
+int button_1 = HIGH;
+int button_2 = HIGH;
 
 
 
@@ -40,7 +39,7 @@ void buttons() {
 void pomo() {
   
 
-  if (button_1 == HIGH) {   // start and pause button
+  if (button_1 == LOW) {   // start and pause button
     
     if (timer_run ==false) {
       timer_run = true;
@@ -55,7 +54,7 @@ void pomo() {
 
   }
 
-  if (button_2 == HIGH) {  // stop button
+  if (button_2 == LOW) {  // stop button
     timer_run = false;
     timercount = 0;
 
@@ -119,8 +118,8 @@ void setup() { //setup
   
   
   //init buttons
-  pinMode(pins[0], INPUT);
-  pinMode(pins[1], INPUT);
+  pinMode(pins[0], INPUT_PULLUP);
+  pinMode(pins[1], INPUT_PULLUP);
   
   // Init display
   lcd.init();

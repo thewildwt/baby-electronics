@@ -10,14 +10,14 @@
       "id": "btn1",
       "top": -32.2,
       "left": 624,
-      "attrs": { "color": "black", "xray": "1", "key": "w" }
+      "attrs": { "color": "black", "xray": "1", "key": "w", "bounce": "0" }
     },
     {
       "type": "wokwi-pushbutton",
       "id": "btn2",
       "top": -32.2,
       "left": 528,
-      "attrs": { "color": "red", "xray": "1", "key": "q" }
+      "attrs": { "color": "red", "xray": "1", "key": "q", "bounce": "0" }
     },
     {
       "type": "wokwi-resistor",
@@ -62,18 +62,18 @@
     [ "bb1:bn.49", "bb1:tn.49", "black", [ "v-174.1", "h-0.8" ] ],
     [ "uno:2", "bb1:2t.a", "blue", [ "v0" ] ],
     [ "uno:4", "bb1:1t.b", "green", [ "v0" ] ],
-    [ "r2:2", "bb1:tn.7", "black", [ "v0" ] ],
-    [ "r1:2", "bb1:tn.8", "black", [ "v0" ] ],
-    [ "btn2:1.r", "bb1:tp.20", "red", [ "v0" ] ],
-    [ "btn1:1.r", "bb1:tp.27", "red", [ "v0" ] ],
     [ "bb1:2t.b", "r2:1", "blue", [ "v0" ] ],
     [ "bb1:1t.d", "r1:1", "green", [ "v0" ] ],
-    [ "bb1:2t.c", "btn2:2.l", "blue", [ "v0", "h144" ] ],
-    [ "bb1:1t.e", "btn1:2.l", "green", [ "v9.6", "h249.6" ] ],
+    [ "btn2:2.r", "bb1:tn.19", "black", [ "h0" ] ],
+    [ "btn1:2.r", "bb1:tn.27", "black", [ "h0" ] ],
+    [ "bb1:2t.c", "btn2:1.l", "blue", [ "v0", "h134.4", "v-134.4" ] ],
+    [ "bb1:1t.e", "btn1:1.l", "green", [ "v9.6", "h240", "v-163.2" ] ],
+    [ "r2:2", "bb1:tp.7", "red", [ "v0" ] ],
     [ "r1:1", "bb1:5t.d", "", [ "$bb" ] ],
     [ "r1:2", "bb1:11t.d", "", [ "$bb" ] ],
     [ "r2:1", "bb1:4t.b", "", [ "$bb" ] ],
-    [ "r2:2", "bb1:10t.b", "", [ "$bb" ] ]
+    [ "r2:2", "bb1:10t.b", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:tp.8", "red", [ "v0" ] ]
   ],
   "dependencies": {}
 }
