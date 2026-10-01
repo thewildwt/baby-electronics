@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "author": "Vishwajeet Tomar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": -52.8, "left": -211.7, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -58.9, "left": -9.8, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": -58.9, "left": 86.2, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -260.2,
+      "left": -190.2,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -166.8,
+      "left": -188.2,
+      "attrs": { "color": "red", "flip": "" }
+    }
+  ],
+  "connections": [
+    [ "pot1:GND", "nano:GND.1", "black", [ "v48", "h-86.4" ] ],
+    [ "pot2:GND", "nano:GND.1", "black", [ "v48", "h-182.4" ] ],
+    [ "pot1:VCC", "nano:5V", "red", [ "v38.4", "h-125.6" ] ],
+    [ "pot2:VCC", "nano:5V", "red", [ "v38.4", "h-221.6", "v-38.4" ] ],
+    [ "servo1:GND", "nano:GND.2", "black", [ "v19.2", "h19.2" ] ],
+    [ "led1:C", "nano:GND.2", "black", [ "v28.8", "h-57.2" ] ],
+    [ "servo1:V+", "nano:5V", "red", [ "v9.6", "h297.7", "v153.6", "h-278.4" ] ],
+    [ "servo1:PWM", "nano:3", "blue", [ "v28.8", "h-9.4" ] ],
+    [ "led1:A", "nano:4", "green", [ "v38.4", "h48" ] ],
+    [ "nano:A0", "pot1:SIG", "gold", [ "v67.2", "h192" ] ],
+    [ "nano:A1", "pot2:SIG", "gold", [ "v76.8", "h278.4" ] ]
+  ],
+  "dependencies": {}
+}
