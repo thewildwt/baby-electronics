@@ -1,0 +1,7 @@
+lidar_obstacle_detector:
+	ros
+	
+patrol_controller:
+
+telemetry_logger:
+
